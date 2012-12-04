@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Адаптивная верстка</title>
+</head>
+<body>
+<style>
+@media only screen 
+and (min-width: 1200px) 
+{
+.wrapper
+{
+width:1200px;
+margin: 0 auto;
+}
+.wrapperO
+{
+width:900px;
+float:left;
+}
+.w
+{
+height:200px;
+width:600px;
+background-color:#E5E100;
+float:right;
+}
+.q
+{
+height:200px;
+width:300px;
+background-color:orange;
+}
+.e
+{
+height:200px;
+width:300px;
+background-color:#DB8589;
+float:right;
+}
+}
+@media only screen 
+and (min-width: 900px) 
+and (max-width: 1199px)
+{
+.wrapper
+{
+width:900px;
+margin: 0 auto;
+}
+.wrapperO
+{
+width:900px;
+margin: 0 auto;
+}
+.q
+{
+height:200px;
+width:300px;
+background-color:orange;
+}
+.w
+{
+height:200px;
+width:600px;
+background-color:#E5E100;
+float:right;
+}
+.e
+{
+height:200px;
+width:100%;
+background-color:#DB8589;
+}
+}
+@media only screen 
+and (max-width: 899px)
+{
+.wrapper
+{
+width:100%;
+margin: 0 auto;
+}
+.wrapperO
+{
+width:100%;
+margin: 0 auto;
+}
+.w
+{
+height:200px;
+width:100%;
+background-color:#E5E100;
+}
+.q
+{
+height:200px;
+width:100%;
+background-color:orange;
+}
+.e
+{
+height:200px;
+width:100%;
+background-color:#DB8589;
+}
+}
+</style>
+<div class="wrapper">
+<div class="wrapperO">
+<div class="w">
+</div>
+<div class="q">
+</div>
+</div>
+<div class="e">
+</div>
+</div>
+</body>
+</html>
