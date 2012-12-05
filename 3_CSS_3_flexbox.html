@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Адаптивная верстка</title>
+</head>
+<body>
+<style>
+@media only screen 
+and (min-width: 1200px)
+{
+#rod { display: flex; flex-flow: row; }
+#A { width: 300px; height: 300px;}
+#B { width: 600px; height: 300px;}
+#C { width: 300px; height: 300px;}
+}
+
+@media only screen 
+and (min-width: 900px) 
+and (max-width: 1199px)
+#rod { display: flex; flex-flow: row; width: 900px; flex: auto}
+#rod > B { width: 300px;   order: 1; }
+#rod > A { width: 600px;   order: 2; }
+#A { height: 300px; }
+#B { height: 300px; }
+#C { height: 300px; }
+
+@media only screen 
+and (max-width: 899px)
+{
+#rod { display: flex; flex-flow: column; }
+#A { height: 300px; }
+#B { height: 300px; }
+#C { height: 300px; }
+}
+</style>
+<div id="rod">
+<div id="A">
+Левый
+</div>
+<div id="B">
+Центральный
+</div>
+<div id="C">
+Правый
+</div>
+</div>
+</div>
+</body>
+</html>

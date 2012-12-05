@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Адаптивная верстка</title>
+</head>
+<body>
+<style type="text/css">
+@media only screen 
+and (min-width: 1200px)
+{ 
+#grid 
+{ 
+display: grid; grid-definition-columns: 1200px; grid-definition-rows: 200px
+}
+#A { grid-column-position: 1; grid-row-position: 1; }
+#B { grid-column-position: 2 grid-row-position: 1; }
+#C { grid-column-position: 3; grid-row-position: 1; }
+{
+@media only screen 
+and (min-width: 900px) 
+and (max-width: 1199px)
+{
+#grid 
+{ 
+display: grid; grid-definition-columns: 900px; grid-definition-rows: 400px
+}
+#A { grid-column-position: 1; grid-row-position: 1; }
+#B { grid-column-position: 2 grid-row-position: 1; }
+#C { grid-column-position: 1; grid-row-position: 2; grid-column-span: 2;}
+}
+@media only screen 
+and (max-width: 899px)
+{
+#grid 
+{ 
+display: grid; grid-definition-columns: 600px; grid-definition-rows: 600px
+}
+#A { grid-column-position: 1; grid-row-position: 1; }
+#B { grid-column-position: 1 grid-row-position: 2; }
+#C { grid-column-position: 1; grid-row-position: 3; }
+}
+</style>
+<div id="grid">
+<div id="A">
+Левый
+</div>
+<div id="B">
+Центральный
+</div>
+<div id="C">
+Правый
+</div>
+</div>
+</div>
+</body>
+</html>
